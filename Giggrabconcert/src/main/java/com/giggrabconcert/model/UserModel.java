@@ -78,6 +78,8 @@ public class UserModel {
     public void setTicket(TicketModel ticket) {
         this.ticket = ticket;
     }
-}
 
-	
+
+
+
+}

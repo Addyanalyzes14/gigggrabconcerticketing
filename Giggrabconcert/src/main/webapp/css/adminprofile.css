@@ -1,1 +1,163 @@
 @charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #003087;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+main {
+    padding: 20px;
+}
+
+.user-info {
+    background-color: #fff9e6;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.user-details h2 {
+    color: #003087;
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.admin-stats {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.admin-stats h3 {
+    color: #003087;
+    margin-bottom: 15px;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.stat-item .icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.stat-item .icon.red { background-color: #ff4d4d; }
+.stat-item .icon.blue { background-color: #4d79ff; }
+.stat-item .icon.purple { background-color: #b366ff; }
+.stat-item .icon.yellow { background-color: #ffcc00; }
+
+.recent-activities {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.recent-activities h3 {
+    color: #003087;
+    margin-bottom: 15px;
+}
+
+.recent-activities table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.recent-activities th, .recent-activities td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+.recent-activities th {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #003087;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.footer-links div {
+    text-align: left;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+}

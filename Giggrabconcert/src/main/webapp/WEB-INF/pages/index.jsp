@@ -6,14 +6,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In | Concert Tickets</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/signin.css">
+      <link rel="stylesheet" type="text/css" 
+          href="${pageContext.request.contextPath}/css/index.css">
 </head>
 <body>
 <div class="container">
     <main class="login-box">
         <!-- Image Section -->
         <section class="left" aria-label="Concert scene">
-            <img src="${pageContext.request.contextPath}/images/concert.jpg" 
+            <img src="${pageContext.request.contextPath}/resources/icons/images/New folder/signin one.jpg" 
                  alt="Live concert audience" 
                  class="login-img">
         </section>

@@ -3,6 +3,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+
+/**
+ * Dbconfig are the configuration class for the wholesome management of database connections.
+ */
 public class Dbconfig {
 	// Database configuration information
 		private static final String DB_NAME = "Giggrabconcert";

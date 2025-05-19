@@ -1,45 +1,43 @@
 package com.giggrabconcert.model;
 
-public class TicketModel {  
-	private String eventName; 
-	private int ticketId;
-    private double price; 
-    
-	public TicketModel(String eventName, int eventId, double price) {
-		super();
-		this.eventName = eventName;
-	    this.ticketId = eventId;
-	    this.price = price;
-	}
-    
-	public TicketModel(String name) {
-		this.eventName = name;
-	}
-	
-	public String getEventName() {
-		return eventName;
-	}
+public class TicketModel {
+    private int ticketId;
+    private String eventName;
+    private double price; // Adjusted to double (or int, depending on schema)
 
-	public void setEventName(String eventName) {
-		this.eventName = eventName;
-	}
+    // No-argument constructor
+    public TicketModel() {
+    }
 
-	public int getTicketId() {
-		return ticketId;
-	}
+    // Parameterized constructor (if needed)
+    public TicketModel(int ticketId, String eventName, double price) {
+        this.ticketId = ticketId;
+        this.eventName = eventName;
+        this.price = price;
+    }
 
-	public void setTicketId(int ticketId) {
-		this.ticketId = ticketId;
-	}
+    // Getters and setters
+    public int getTicketId() {
+        return ticketId;
+    }
 
+    public void setTicketId(int ticketId) {
+        this.ticketId = ticketId;
+    }
+
+    public String getEventName() {
+        return eventName;
+    }
+
+    public void setEventName(String eventName) {
+        this.eventName = eventName;
+    }
 
     public double getPrice() {
-		return price;
-	}
+        return price;
+    }
 
-	public void setPrice(double price) {
-		this.price = price;
-	}
-         
-
+    public void setPrice(double price) {
+        this.price = price;
+    }
 }

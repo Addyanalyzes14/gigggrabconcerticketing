@@ -43,7 +43,7 @@ public class PasswordUtil {
     // Password derived AES 256 bits secret key
     public static SecretKey getAESKeyFromPassword(char[] password, byte[] salt){
            	try {
-           		SecretKeyFactory factory = SecretKeyFactory.getInstance("September14ww@");
+           		SecretKeyFactory factory = SecretKeyFactory.getInstance("PBKDF2WithHmacSHA256");
            		// iterationCount = 65536
            		// keyLength = 256
            		KeySpec spec = new PBEKeySpec(password, salt, 65536, 256);
@@ -58,7 +58,7 @@ public class PasswordUtil {
     }
 
     // return a base64 encoded AES encrypted text
-    public static String encrypt(String employee_id, String password){
+    public static String encrypt(String email, String password){
     	try {
 		    // 16 bytes salt
 		    byte[] salt = getRandomNonce(SALT_LENGTH_BYTE);
@@ -67,7 +67,7 @@ public class PasswordUtil {
 		    byte[] iv = getRandomNonce(IV_LENGTH_BYTE);
 		
 		    // secret key from password
-		    SecretKey aesKeyFromPassword = getAESKeyFromPassword(employee_id.toCharArray(), salt);
+		    SecretKey aesKeyFromPassword = getAESKeyFromPassword(email.toCharArray(), salt);
 		
 		    Cipher cipher = Cipher.getInstance(ENCRYPT_ALGO);
 		

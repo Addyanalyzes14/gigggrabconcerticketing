@@ -1,6 +1,7 @@
 package com.giggrabconcert.controller;
 
 import jakarta.servlet.ServletException;
+
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -27,7 +28,7 @@ public class IndexController extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		request.getRequestDispatcher("WEB-INF/pages/index.jsp").forward(request, response);
+		request.getRequestDispatcher("/WEB-INF/pages/index.jsp").forward(request, response);
 	}
 
 	/**
